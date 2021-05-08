@@ -1,0 +1,28 @@
+@import url("sorting_hat/style.css");
+@import url("home/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+.primaryButton {
+  color: white;
+  background-color: #3c3cff;
+  border: none;
+  padding: 0.8em;
+  border-radius: 4px;
+  font-family: inherit;
+  -webkit-box-shadow: 2px 4px 18px rgba(60, 60, 255, 0.4);
+          box-shadow: 2px 4px 18px rgba(60, 60, 255, 0.4);
+}
+
+.primaryButton:hover {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=main.css.map */

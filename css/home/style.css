@@ -1,0 +1,32 @@
+#home-container {
+  margin-top: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.class-card {
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  background-color: white;
+  padding: 3em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 2px 4px 18px #c7c7c7;
+          box-shadow: 2px 4px 18px #c7c7c7;
+}
+
+.class-card:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 2px solid rgba(128, 128, 128, 0.37);
+}
+
+div.class-card > button.primaryButton {
+  margin-top: 2em;
+}
+/*# sourceMappingURL=style.css.map */

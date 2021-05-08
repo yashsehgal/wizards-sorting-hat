@@ -1,0 +1,31 @@
+@import url('sorting_hat/style.css');
+@import url('home/style.css');
+
+
+// Importing Google Fonts
+
+// Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
+.primaryButton {
+  color: white;
+  background-color: rgb(60, 60, 255);
+  border: none;
+  padding: 0.8em;
+  border-radius: 4px;
+  font-family: inherit;
+
+  box-shadow: 2px 4px 18px rgba(60, 60, 255, 0.400);
+}
+
+.primaryButton:hover {
+  filter: brightness(95%);
+  box-shadow: none;
+}

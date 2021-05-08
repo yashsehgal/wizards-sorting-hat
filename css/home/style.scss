@@ -1,0 +1,28 @@
+
+
+#home-container {
+  margin-top: 8%;
+  display: flex;
+}
+
+.class-card {
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  background-color: white;
+  padding: 3em;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 18px rgb(199, 199, 199);
+
+}
+
+.class-card:hover {
+  box-shadow: none;
+  outline: 2px solid rgba(128, 128, 128, 0.37);
+}
+
+div.class-card > button.primaryButton {
+  margin-top: 2em;
+}
+
