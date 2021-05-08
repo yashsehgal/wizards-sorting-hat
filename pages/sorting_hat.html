@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Wizards Sorting Hat / AbracadabraHacks</title>
+</head>
+
+<body>
+  <div class="username-input">
+
+    <div>
+      <p>
+        Enter your Good Name
+      </p>
+      <input type="text" class="username" placeholder="Create a username" />
+      <br />
+      <button class="primaryButton" onclick="submitUsername();">
+        Get Sorted!
+      </button>
+    </div>
+  </div>
+
+  <div class="bg" >
+    <img src="../assets/bg-2.webp" id="bg-image" />
+  </div>
+
+  <div class="sorting-hat-game">
+    <h2>
+      Welcome! Get your House Sorted 🎩
+    </h2>
+    <div class="image-container">
+      <input type="file"
+        class="primaryButton"
+        accept="image/*"
+        value="Upload your Image" 
+        onchange="loadFile(event);" />
+        <br />
+        <img id="output" />
+
+        <div id="sorting-hat-content">
+
+        </div>
+    </div>
+  </div>
+
+  <!-- linking home.js -->
+  <script src="../js/sorting_hat.js"></script>
+</body>
+
+</html>
