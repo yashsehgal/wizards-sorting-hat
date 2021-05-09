@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/main.css">
   <title>Wizards Sorting Hat / AbracadabraHacks</title>
 </head>
@@ -18,7 +21,7 @@
       </p>
       <input type="text" class="username" placeholder="Create a username" />
       <br />
-      <button class="primaryButton" onclick="submitUsername();">
+      <button class="offset" onclick="submitUsername();">
         Get Sorted!
       </button>
     </div>
@@ -32,14 +35,42 @@
     <h2>
       Welcome! Get your House Sorted 🎩
     </h2>
-    <div class="image-container">
+    <!-- <div class="image-container">
       <input type="file"
-        class="primaryButton"
+        class="offset"
         accept="image/*"
         value="Upload your Image" 
         onchange="loadFile(event);" />
         <br />
-        <img id="output" />
+        <img id="output" /> -->
+
+        <div class="main-content__wrapper">
+          <div class="main-content">
+            <div class="sorting-hat">
+              <div class="sorting-hat__answer">Gryffindor!</div>
+              <div class="sorting-hat__top"></div>
+              <div class="sorting-hat__eye left"></div>
+              <div class="sorting-hat__eye right"></div>
+              <div class="sorting-hat__mouth"></div>
+              <div class="sorting-hat__base"></div>
+            </div>
+            <div class="avatar">
+              <div class="avatar__hair"></div>
+              <div class="avatar__head">
+                <div class="avatar__eyes left"></div>
+                <div class="avatar__eyes right"></div>
+                <div class="avatar__mouth"></div>
+              </div>
+              <div class="avatar__ears left"></div>
+              <div class="avatar__ears right"></div>
+              <div class="avatar__coat">
+                <div class="avatar__shirt">
+                  <div class="avatar__tie"></div>
+                </div>
+              </div>
+            </div>
+          </div><button class="sort-house js-sort">Sort Me!</button>
+        </div>
 
         <div id="sorting-hat-content">
 
@@ -48,7 +79,45 @@
   </div>
 
   <!-- linking home.js -->
-  <script src="../js/sorting_hat.js"></script>
+  <script src="../js/sorting_hat.js">
+  
+  </script>
+
+  <script>
+    // $(".js-sort").on("click", function () {
+    //     $(".main-content__wrapper")
+    //       .removeClass()
+    //       .addClass("main-content__wrapper");
+    //     $(".sorting-hat,.avatar__mouth").removeClass("animate");
+
+    //     var houses = ["hufflepuff", "gryffindor", "ravenclaw", "slytherin"];
+    //     var item = houses[Math.floor(Math.random() * houses.length)];
+
+    //     setTimeout(function () {
+    //       $(".sorting-hat").addClass("animate");
+    //       $(".sorting-hat__answer").text(item + "!");
+    //     }, 1000);
+    //     setTimeout(function () {
+    //       $(".avatar__mouth").addClass("animate");
+    //     }, 1500);
+    //     setTimeout(function () {
+    //       $(".main-content__wrapper").addClass(item);
+    //     }, 4000);
+    //   });
+
+
+    //   $('input[name=avatar-gender]').on('change', function () {
+    //     var value = $('input[name=avatar-gender]:checked').val();
+    //     if (value == 1) {
+    //       $('.avatar__hair').removeClass('female');
+    //     } else if (value == 2) {
+    //       $('.avatar__hair').addClass('female');
+    //     }
+
+        
+    //   });
+
+  </script>
 </body>
 
 </html>

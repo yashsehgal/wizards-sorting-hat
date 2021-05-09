@@ -1,11 +1,18 @@
 @import url("sorting_hat/style.css");
 @import url("home/style.css");
+@import url("index/style.css");
+@import url("game/style.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("http://fonts.cdnfonts.com/css/harry-potter");
 * {
   margin: 0;
   padding: 0;
   line-height: inherit;
   font-weight: inherit;
+}
+
+body {
+  font-family: "Harry Potter", sans-serif;
 }
 
 .primaryButton {
@@ -24,5 +31,9 @@
           filter: brightness(95%);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

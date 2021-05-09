@@ -1,4 +1,4 @@
-let username_input = document.querySelector(".username")
+  let username_input = document.querySelector(".username")
 
 function submitUsername() {
   
@@ -53,19 +53,19 @@ function loadFile(event) {
 }
 
 
-function getRandomHouse() {
+function getRandomHouse(houseName) {
 
-  const house_names = ["Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"];
+  // const house_names = ["Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"];
 
-  const houseName = house_names[Math.floor((Math.random() * house_names.length))];
+  // const houseName = house_names[Math.floor((Math.random() * house_names.length))];
   // console.log(houseName)
 
-
+  console.log("IT'S WORKING")
 
   let content = document.createElement("div");
   content.innerHTML = `
   <h2>
-    Congratulations ${getUsername()} ! You have been selected in ${houseName} House.
+    Congratulations ${getUsername()}
   </h2>
   `;
 
@@ -82,5 +82,42 @@ function getRandomHouse() {
   }
 
   document.getElementById("sorting-hat-content").append(content);
-  document.getElementById("sorting-hat-content").append(houseImageGIF);
+  document.getElementById("sorting-hat-content").append(houseImageGIF); 
 }
+
+
+
+
+$(".js-sort").on("click", function () {
+  $(".main-content__wrapper")
+    .removeClass()
+    .addClass("main-content__wrapper");
+  $(".sorting-hat,.avatar__mouth").removeClass("animate");
+
+  var houses = ["hufflepuff", "gryffindor", "ravenclaw", "slytherin"];
+  var item = houses[Math.floor(Math.random() * houses.length)];
+
+  setTimeout(function () {
+    $(".sorting-hat").addClass("animate");
+    $(".sorting-hat__answer").text(item + "!");
+  }, 1000);
+  setTimeout(function () {
+    $(".avatar__mouth").addClass("animate");
+  }, 1500);
+  setTimeout(function () {
+    $(".main-content__wrapper").addClass(item);
+  }, 4000);
+  getRandomHouse(item)
+});
+
+
+$('input[name=avatar-gender]').on('change', function () {
+  var value = $('input[name=avatar-gender]:checked').val();
+  if (value == 1) {
+    $('.avatar__hair').removeClass('female');
+  } else if (value == 2) {
+    $('.avatar__hair').addClass('female');
+  }
+
+
+});

@@ -1,9 +1,12 @@
 
 
+
 #home-container {
   margin-top: 8%;
   display: flex;
 }
+
+
 
 .class-card {
   margin-right: auto;
@@ -14,6 +17,9 @@
   align-items: center;
   box-sizing: border-box;
   box-shadow: 2px 4px 18px rgb(199, 199, 199);
+
+  color: black;
+  font-family: "Harry Potter", sans-serif;
 
 }
 
@@ -26,3 +32,49 @@ div.class-card > button.primaryButton {
   margin-top: 2em;
 }
 
+//Colours
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #006ab1;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+
+.magical-btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $blue;
+  border-radius: 6px;
+  color: $blue;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 1em;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Harry Potter", sans-serif;
+
+  &:hover,
+  &:focus {
+    color: black;
+    outline: 0;
+  }
+
+  border-color: $blue;
+  color: black;
+  box-shadow: 0 0 40px 40px $blue inset,
+  0 0 0 0 $blue;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 4px $blue;
+  }
+}

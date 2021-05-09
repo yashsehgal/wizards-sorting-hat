@@ -4,9 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <title>Harry Potter World / AbracadabraHacks</title>
 </head>
-<body>
-  
+<body style="display: block;
+">
+
+  <video autoplay loop id="myVideo">
+    <source src="assets/video_BG.mp4" type="video/mp4">
+  </video>
+
+  <div class="main-container">
+    <h1>
+      Welcome to the world of wizards
+    </h1>
+    <a href="pages/home.html">
+      <button class="offset">
+        Start
+      </button>
+    </a>
+  </div>
+  <script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+
+    // Get the button
+    // var btn = document.getElementById("myBtn");
+
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+      }
+    }
+    
+</script>
 </body>
 </html>

@@ -4,9 +4,83 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spell Room / AbaracadabraHacks</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Spells Class / AbaracadabraHacks</title>
 </head>
-<body>
-  
+<body style="
+  background: url('/assets/spells_game_BG.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+  display: block;
+">
+  <div class="spell-class-container">
+    <div>
+
+    <div class="spells">
+      <a href="#" onclick="
+        getSpellImage('wl');
+      ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Wingardium Leviosa
+      </a>
+      <a href="#" onclick="
+        getSpellImage('rep');
+      ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Reparo
+      </a>
+      <a href="#" onclick="
+        getSpellImage('pack');
+      ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Pack
+      </a>
+    </div>
+
+    <div class="spells">
+      <a href="#" onclick="
+        getSpellImage('per');
+      ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Periculum
+      </a>
+      <a href="#" onclick="
+        getSpellImage('ep');
+      ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Expecto Patronum
+      </a>
+      <a href="#" onclick="
+        getSpellImage('vv');
+      ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Vera Verto
+      </a>
+    </div>
+    </div>
+
+    <div class="spell-image-container">
+      <img id="spell-image" />
+    </div>
+  </div>
+  <script src="../js/spell.js"></script>
 </body>
 </html>

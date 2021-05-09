@@ -9,11 +9,22 @@
 </head>
 <body style="
   display: block;
+  background: url('/assets/hallway_bg.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
 ">
   
+<div class="home">
+
   <h2 style="
     text-align: center;
     margin-top: 3em;
+    font-size: 50px;
+  font-family: 'Harry Potter',
+  sans-serif;
+  color: white;
   ">
     Welcome to Hogwartz! Make sure you are inside your classroom
   </h2>
@@ -21,34 +32,39 @@
   <!-- adding script here -->
   <div id="home-container">
 
-      <div class="class-card">
+      <div class="class-card" style="
+          background: url('/assets/hat.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        ">
         <div class="content">
           <h2>
             Sorting Hat
           </h2>
-          <span>
-            Enter in this class and get your house sorted
-          </span>
         </div>
         <a href="sorting_hat.html">
-          <button class="primaryButton">Enter Class</button>
+          <button class="magical-btn">Get Sorted</button>
         </a>
       </div>
 
-      <div class="class-card">
+      <div class="class-card" style="
+          background: url('/assets/spells_BG.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 200px;
+        ">
         <div class="content">
           <h2>
             Spells
           </h2>
-          <span>
-            Enter in this class and learn magic spells class
-          </span>
         </div>
         <a href="spells.html">
-          <button class="primaryButton">Enter Class</button>
+          <button class="magical-btn">Enter Class</button>
         </a>
       </div>
   
+
+  </div>
 
   </div>
 </body>
